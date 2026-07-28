@@ -4,8 +4,8 @@ import pandas as pd
 import joblib
 import os
 #loading model and preprocessor
-model=joblib.load('models/RandomForeModel.joblib')
-preprocessor=joblib.load('models/Preprocessor1.joblib')
+model=joblib.load('RandomForeModel.joblib')
+preprocessor=joblib.load('Preprocessor1.joblib')
 print("Model and preprocessor loaded")
 app=Flask(__name__)
 @app.route('/',methods=['GET','POST'])
