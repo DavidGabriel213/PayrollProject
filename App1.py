@@ -42,13 +42,13 @@ def myfunc():
         elif prediction==1:
             category="Senior"
         elif prediction==2:
-            category="Junior"
-        else:
             category="Medium"
+        else:
+            category="Junior"
     class_map = {
-       "Low":"result-low",
+       "Junior":"result-junior",
        "Medium":"result-medium",
-       "High":"result-high",
+       "Senior":"result-senior",
        "Executive":"result-executive"}
     Category_class = class_map.get(category, "")
     return render_template("payroll.html", category=category, Category_class=Category_class)
