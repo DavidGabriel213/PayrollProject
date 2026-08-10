@@ -28,7 +28,7 @@ def myfunc():
         State=request.form["state"]
         Rank=request.form["rank"]
         Qualification=request.form["qualification"]
-        EmploymentType=request.form["employmenttype"]
+        EmploymentType=request.form["employment_type"]
         #binary feature
         Gender=request.form["gender"]
         feature=pd.DataFrame({
