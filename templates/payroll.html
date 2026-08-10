@@ -379,15 +379,11 @@
           <select name="department" required>
             <option value="" disabled selected>Select department</option>
             {% for d in [
-              'Mathematics','Statistics','Physics','Chemistry',
-              'Computer Science','Biochemistry','Biology',
-              'Civil Engineering','Mechanical Engineering',
-              'Electrical/Electronic Engineering',
-              'Chemical Engineering','Computer Engineering',
-              'Economics','Accounting','Business Administration',
-              'Law','Medicine and Surgery (MBBS)',
-              'Nursing Science','Pharmacy','English',
-              'History and International Studies',
+              'Mathematics','Statistics','Chemistry',
+              'Computer science','Biology',
+              'Engineering','Economics','Accounting',
+              'Business Administration',
+              'Law', 'Nursing Science','Pharmacy','English,
               'Education','Agriculture','Architecture'
             ] %}
             <option value="{{ d }}">{{ d }}</option>
