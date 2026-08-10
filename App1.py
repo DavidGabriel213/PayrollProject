@@ -22,7 +22,6 @@ def myfunc():
         ResearchProductivity=(Publications/(1+YearsOfExperience))
         TeachingLoad=CoursesTaught/(1+StudentsSupervised)
         Performance=((YearsOfExperience+Publications)/(1+PerformanceScore))
-        YearsStudents=(StudentsSupervised/(1+YearsOfExperience))
         #Categorical features
         University=request.form["university"]
         Department=request.form["department"]
