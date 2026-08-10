@@ -13,11 +13,11 @@ def myfunc():
     if request.method=='POST':
         # numerical features
         Age=float(request.form["age"])
-        YearsOfExperience=float(request.form["experience"])
+        YearsOfExperience=float(request.form["years_experience"])
         Publications=float(request.form["publications"])
-        PerformanceScore=float(request.form["performance"])
-        CoursesTaught=float(request.form["courses"])
-        StudentsSupervised=float(request.form["student"])
+        PerformanceScore=float(request.form["performance_score"])
+        CoursesTaught=float(request.form["courses_taught"])
+        StudentsSupervised=float(request.form["student_supervised"])
         ResearchProductivity=(Publications/(1+YearsOfExperience))
         TeachingLoad=CoursesTaught/(1+StudentsSupervised)
         Performance=((YearsOfExperience+Publications)/(1+PerformanceScore))
