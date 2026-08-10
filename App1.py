@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 import numpy as np 
 import pandas as pd
 import joblib
+import os
 #loading model and preprocessor
 model=joblib.load('RandomForeModel.joblib')
 preprocessor=joblib.load('Preprocessor1.joblib')
