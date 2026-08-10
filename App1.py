@@ -39,9 +39,9 @@ def myfunc():
         if prediction==0:
             category="Executive"
         elif prediction==1:
-            category="High"
+            category="Senior"
         elif prediction==2:
-            category="Low"
+            category="Junior"
         else:
             category="Medium"
     class_map = {
