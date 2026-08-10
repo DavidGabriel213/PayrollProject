@@ -18,7 +18,7 @@ def myfunc():
         Publications=float(request.form["publications"])
         PerformanceScore=float(request.form["performance_score"])
         CoursesTaught=float(request.form["courses_taught"])
-        StudentsSupervised=float(request.form["student_supervised"])
+        StudentsSupervised=float(request.form["students_supervised"])
         ResearchProductivity=(Publications/(1+YearsOfExperience))
         TeachingLoad=CoursesTaught/(1+StudentsSupervised)
         Performance=((YearsOfExperience+Publications)/(1+PerformanceScore))
