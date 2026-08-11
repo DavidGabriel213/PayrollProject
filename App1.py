@@ -32,7 +32,12 @@ def myfunc():
         #binary feature
         Gender=float(request.form["gender"])
         feature=pd.DataFrame({
-        "Age":[Age],"YearsOfExperience":[YearsOfExperience],"CoursesTaught":[CoursesTaught],"Publications":[Publications],"StudentsSupervised":[StudentsSupervised],"ResearchProductivity":[ResearchProductivity],"TeachingLoad":[TeachingLoad],"Performance":[Performance],"YearsStudents":[YearsStudents],"University":[University],"Department":[Department],"State":[State],"Rank":[Rank],"Qualification":[Qualification],"EmploymentType":[EmploymentType],"Gender":[Gender]})
+        "Age":[Age],"YearsOfExperience":[YearsOfExperience],"CoursesTaught":[CoursesTaught],
+            "Publications":[Publications],"StudentsSupervised":[StudentsSupervised],
+            "ResearchProductivity":[ResearchProductivity],"TeachingLoad":[TeachingLoad],
+            "Performance":[Performance],"YearsStudents":[YearsStudents],"University":[University],
+            "Department":[Department],"State":[State],"Rank":[Rank],"Qualification":[Qualification],
+            "EmploymentType":[EmploymentType],"Gender":[Gender]})
         #preprocessing and prediction
         FEATURES=preprocessor.transform(feature)
         prediction=model.predict(FEATURES)[0]
