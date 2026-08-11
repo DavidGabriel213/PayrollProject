@@ -30,7 +30,7 @@ def myfunc():
         Qualification=request.form["qualification"]
         EmploymentType=request.form["employment_type"]
         #binary feature
-        Gender=request.form["gender"]
+        Gender=float(request.form["gender"])
         feature=pd.DataFrame({
         "Age":[Age],"YearsOfExperience":[YearsOfExperience],"CoursesTaught":[CoursesTaught],"Publications":[Publications],"StudentsSupervised":[StudentsSupervised],"ResearchProductivity":[ResearchProductivity],"TeachingLoad":[TeachingLoad],"Performance":[Performance],"YearsStudents":[YearsStudents],"University":[University],"Department":[Department],"State":[State],"Rank":[Rank],"Qualification":[Qualification],"EmploymentType":[EmploymentType],"Gender":[Gender]})
         #preprocessing and prediction
