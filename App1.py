@@ -10,7 +10,7 @@ app=Flask(__name__)
 @app.route('/',methods=['GET','POST'])
 def myfunc():
     category=None
-    Category_class=None
+    Category_Class=None
     if request.method=='POST':
         # numerical features
         Age=float(request.form["age"])
