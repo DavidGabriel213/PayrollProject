@@ -3,7 +3,7 @@
 A complete multi-class ML project predicting the payroll category of Nigerian university academic staff across four bands — **Low, Medium, High and Executive** — from staff profile information alone.
 
 ## 🌐 Live Demo
-**[Try the app →](https://payrollproject-fj1x.onrender.com)**
+**[Try the app →](https://payrollproject-z1qq.onrender.com)**
 
 ---
 
